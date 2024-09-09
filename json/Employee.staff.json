@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "66dec0f19e8a100003f88d11"
+  },
+  "ID": "EMP001",
+  "name": "Alex",
+  "designation": "Administrator",
+  "salary": "35000",
+  "experience": "2"
+},
+{
+  "_id": {
+    "$oid": "66dec1b69e8a100003f88d14"
+  },
+  "ID": "EMP002",
+  "name": "Teza",
+  "designation": "Manager",
+  "salary": "50000",
+  "experience": "3"
+},
+{
+  "_id": {
+    "$oid": "66dec1d99e8a100003f88d15"
+  },
+  "ID": "EMP003",
+  "name": "Kevin",
+  "designation": "Senior Manager",
+  "salary": "60000",
+  "experience": "4"
+},
+{
+  "_id": {
+    "$oid": "66dec2569e8a100003f88d16"
+  },
+  "ID": "EMP004",
+  "name": "Jennie",
+  "designation": "Junior",
+  "salary": "40000",
+  "experience": "0"
+},
+{
+  "_id": {
+    "$oid": "66dec2d39e8a100003f88d17"
+  },
+  "ID": "EMP005",
+  "name": "Rami",
+  "designation": "Manager",
+  "salary": "30000",
+  "experience": "1"
+},
+{
+  "_id": {
+    "$oid": "66dec3029e8a100003f88d18"
+  },
+  "ID": "EMP006",
+  "name": "Hendery",
+  "designation": "Senior Officer",
+  "salary": "50000",
+  "experience": "3"
+},
+{
+  "_id": {
+    "$oid": "66dec3449e8a100003f88d19"
+  },
+  "ID": "EMP007",
+  "name": "Henry",
+  "designation": "Junior",
+  "salary": "25000",
+  "experience": "0"
+},
+{
+  "_id": {
+    "$oid": "66dec3859e8a100003f88d1a"
+  },
+  "ID": "EMP008",
+  "name": "Lara",
+  "designation": "Manager",
+  "salary": "35000",
+  "experience": "2"
+},
+{
+  "_id": {
+    "$oid": "66dec3a39e8a100003f88d1b"
+  },
+  "ID": "EMP009",
+  "name": "David",
+  "designation": "Administrator",
+  "salary": "45000",
+  "experience": "3"
+},
+{
+  "_id": {
+    "$oid": "66dec3e89e8a100003f88d1c"
+  },
+  "ID": "EMP010",
+  "name": "Daisy",
+  "designation": "Director",
+  "salary": "35000",
+  "experience": "2"
+},
+{
+  "_id": {
+    "$oid": "66dec4859e8a100003f88d1d"
+  },
+  "ID": "EMP011",
+  "name": "Kangin",
+  "designation": "Human Resource",
+  "salary": "60000",
+  "experience": "4"
+},
+{
+  "_id": {
+    "$oid": "66dec4c39e8a100003f88d1e"
+  },
+  "ID": "EMP012",
+  "name": "Belle",
+  "designation": "Junior",
+  "salary": "20000",
+  "experience": "0"
+},
+{
+  "_id": {
+    "$oid": "66dec4f59e8a100003f88d1f"
+  },
+  "ID": "EMP013",
+  "name": "Lisa",
+  "designation": "Manager",
+  "salary": "50000",
+  "experience": "4"
+},
+{
+  "_id": {
+    "$oid": "66dec5209e8a100003f88d20"
+  },
+  "ID": "EMP014",
+  "name": "Jackson",
+  "designation": "Administrator",
+  "salary": "30000",
+  "experience": "2"
+},
+{
+  "_id": {
+    "$oid": "66dec5639e8a100003f88d21"
+  },
+  "ID": "EMP015",
+  "name": "Jimin",
+  "designation": "Director",
+  "salary": "70000",
+  "experience": "5"
+}]

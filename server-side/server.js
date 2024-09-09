@@ -147,7 +147,7 @@ const app=http.createServer(async(req,res)=>{
             let ID=body;
             await collection.deleteOne({ID}).then(()=>{
                 res.writeHead(200,{"Content-Type":"text/plain"})
-                res.end("Success")
+                res.end("Successfully Deleted")
             }).catch(()=>{
                 res.writeHead(404,{"Content-Type":"text/plain"})
                 res.end("Fail");

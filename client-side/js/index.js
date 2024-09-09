@@ -2,6 +2,8 @@ async function fetchData(){
     let res= await fetch("http://localhost:3000/getEmployee");
     let data=await res.json();
     // console.log(data);
+
+    
     str=``
     
     data.map(async(employee)=>{
@@ -50,13 +52,14 @@ async function fetchData(){
         }
         console.log(bonus.salary);
         console.log(salary);
-        document.getElementById(`bonus-salary-${bonus.ID}`).textContent=`${salary}`;
+        document.getElementById(`bonus-salary-${bonus.ID}`).textContent=`₹${salary}`;
     });
 
 
 }
 
 fetchData()
+
 
 // edit
 function handleEdit(id){
@@ -100,6 +103,7 @@ async function handleSave(id){
 
 // Delete
 async function handleDelete(id){
+   if(confirm("Do You Want To Delete The Employee?")){
     const res=await fetch("http://localhost:3000/delete",{
         method:"delete",
         "Content-Type":"text/plain",
@@ -107,9 +111,9 @@ async function handleDelete(id){
     })
 
     const data=await res.text();
-
     res.status==200?alert(data):alert(data);
     fetchData();
+   }
 
 }
 
@@ -147,6 +151,31 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
     })
 
     document.getElementById("main").innerHTML=str;
+
+    let salary=0;
+    fData.map((bonus)=>{
+        console.log(bonus.experience);
+        
+        if(bonus.experience=="1"){
+            salary=parseInt(bonus.salary)+(parseInt(bonus.salary)*0.1)
+        }
+        else if(bonus.experience=="2"){
+            salary=parseInt(bonus.salary)+(parseInt(bonus.salary)*0.15)
+        }
+        else if(bonus.experience=="0"){
+            document.getElementById(`bonus-salary-${bonus.ID}`).style.color="red"
+            document.getElementById(`bonus-salary-${bonus.ID}`).style.fontSize=12+"px"
+            return document.getElementById(`bonus-salary-${bonus.ID}`).textContent=`NOT ELIGIBLE`;
+        }
+        else{
+            salary=parseInt(bonus.salary)+(parseInt(bonus.salary)*0.2)
+
+        }
+        console.log(bonus.salary);
+        console.log(salary);
+        document.getElementById(`bonus-salary-${bonus.ID}`).textContent=`₹${salary}`;
+    });
+
 })
 
 

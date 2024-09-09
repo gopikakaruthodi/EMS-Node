@@ -12,13 +12,14 @@
     height: 9vh;
     /* background-color: white; */
     /* background: linear-gradient( 60deg,rgb(153, 52, 52), rgb(235, 158, 98)); */
-    background: linear-gradient( 60deg,rgb(214, 210, 210), rgb(7, 146, 65));
+    background: linear-gradient( 60deg, rgb(7, 146, 65),rgb(214, 210, 210));
+    
 
 
     color:white;
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 .nav h2{
     margin-left: 10px;
