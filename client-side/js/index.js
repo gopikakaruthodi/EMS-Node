@@ -14,7 +14,7 @@ async function fetchData(){
                             </td>
                             <td><input type="text" id="name-${employee.ID}" disabled=true placeholder="" value="${employee.name}" name="name"></td>
                             <td><input type="text" id="designation-${employee.ID}" disabled=true placeholder="" value="${employee.designation}" name="designation"></td>
-                            <td><input type="text" id="salary-${employee.ID}" disabled=true placeholder=" " value="${employee.salary}" name="salary"></td>
+                            <td><input type="text" id="salary-${employee.ID}" disabled=true placeholder=" " value="₹${employee.salary}" name="salary"></td>
                             <td><input type="text" id="experience-${employee.ID}" disabled=true placeholder="" value="${employee.experience}" name="experience">
                             </td>
                             <td><div class="bonus" id="bonus-salary-${employee.ID}"></div></td>
@@ -138,7 +138,7 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
                             </td>
                             <td><input type="text" id="name-${employee.ID}" disabled=true placeholder="" value="${employee.name}" name="name"></td>
                             <td><input type="text" id="designation-${employee.ID}" disabled=true placeholder="" value="${employee.designation}" name="designation"></td>
-                            <td><input type="text" id="salary-${employee.ID}" disabled=true placeholder=" " value="${employee.salary}" name="salary"></td>
+                            <td><input type="text" id="salary-${employee.ID}" disabled=true placeholder=" " value="₹${employee.salary}" name="salary"></td>
                             <td><input type="text" id="experience-${employee.ID}" disabled=true placeholder="" value="${employee.experience}" name="experience">
                             </td>
                             <td><div class="bonus" id="bonus-salary-${employee.ID}"></div></td>
