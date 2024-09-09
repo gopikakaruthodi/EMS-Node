@@ -11,71 +11,29 @@
         <div class="nav">
             <h2>EMPLOYEE</h2>
             
-            <a href="../client-side/pages/add.html"><button class="add-btn">ADD</button></a>
+            <a href="http://localhost:3000/add"><button class="add-btn">ADD</button></a>
         </div>
-        <div class="main" id="main" style="overflow-x:auto;">
+        <div class="main" style="overflow-x:auto;">
 
-            <!-- <div> 
-                <input type="text" name="ID" disabled=true placeholder="" value="" id="ID">
-                <input type="text" name="name" disabled=true placeholder="" value="" id="name">
-    
-                <input type="text" name="designation" disabled=true placeholder="" value="" id="designation">
-                <input type="text" name="salary" disabled=true placeholder=" " value="" id="salary">
-                <input type="text" name="experience" disabled=true placeholder="" value="" id="experience">
-    
-                <button class="edit-btn" >EDIT</button>
-                <button class="save-btn" >SAVE</button>
-                <button class="delete-btn" >DELETE</button>
-                </div> -->
-
-                <!-- <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Designation</th>
-                        <th>Salary</th>
-                        <th>Experience</th>
-                        <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>234</td>
-                        <td>SK</td>
-                        <td>hbhj</td>
-                        <td>jk</td>
-                        <td>as</td>
-                        <td> <button class="edit-btn" >EDIT</button>
-                            <button class="save-btn" >SAVE</button>
-                            <button class="delete-btn" >DELETE</button></td>
-                    </tr>
-                </table> -->
+            
                 
                 <table class="styled-table">
                     <thead>
+                        <tr>
+                            <input type="search" placeholder="Search by Employee Name" id="search" class="search">
+                        </tr>
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
                             <th>Designation</th>
                             <th>Salary</th>
                             <th>Experience</th>
-                            <th>Action</th>
-
-                            
+                            <th>Bonus-Salary</th>
+                            <th>Action</th>  
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="text" name="ID" disabled=true placeholder="" value="" id="ID">
-                            </td>
-                            <td><input type="text" name="name" disabled=true placeholder="" value="" id="name"></td>
-                            <td><input type="text" name="designation" disabled=true placeholder="" value="" id="designation"></td>
-                            <td><input type="text" name="salary" disabled=true placeholder=" " value="" id="salary"></td>
-                            <td><input type="text" name="experience" disabled=true placeholder="" value="" id="experience">
-                            </td>
-                            <td> <button class="edit-btn" >EDIT</button>
-                                <button class="save-btn" >SAVE</button>
-                                <button class="delete-btn" >DELETE</button></td>
-
-                        </tr>
+                    <tbody id="main">
+                       
                         
                         <!-- and so on... -->
                     </tbody>

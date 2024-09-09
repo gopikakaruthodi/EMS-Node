@@ -43,6 +43,8 @@
     width: 100%;
 }
 input{
+    text-align: center;
+    width: 150px;
     /* border-radius: 8px; */
     padding: 5px 2px;
     /* margin-right: 20px; */
@@ -153,7 +155,7 @@ input[type="text"]:focus {
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 1350px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -165,7 +167,8 @@ input[type="text"]:focus {
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+    padding: 10px 10px;
+    text-align: center;
 }
 
 .styled-table tbody tr {
@@ -179,3 +182,29 @@ input[type="text"]:focus {
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
+
+.search{
+    background-color: white;
+    border: 1px solid #009879;
+    color: #009879;
+    width: 300px;
+    text-align: left;
+}
+input[type="search"]::placeholder {
+    color: #009879;
+    font-style: italic;
+    font-size: 13px;
+    padding-left: 6px;
+  }
+
+  input[type="search"]:focus {
+    outline: none;
+    box-shadow: rgba(66, 65, 65, 0.35) 0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  .bonus{
+    color: rgb(6, 138, 61);
+    font-size: 15px;
+    font-weight: bold;
+
+  }
