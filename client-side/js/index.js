@@ -11,6 +11,7 @@ async function fetchData(){
       
         str+=`<div><tr>
                             <td><input type="text" id="ID-${employee.ID}" disabled=true placeholder="" value="${employee.ID}" name="ID">
+                            
                             </td>
                             <td><input type="text" id="name-${employee.ID}" disabled=true placeholder="" value="${employee.name}" name="name"></td>
                             <td><input type="text" id="designation-${employee.ID}" disabled=true placeholder="" value="${employee.designation}" name="designation"></td>
@@ -30,7 +31,7 @@ async function fetchData(){
 
     let salary=0;
     data.map((bonus)=>{
-        console.log(bonus.experience);
+        // console.log(bonus.experience);
         
         if(bonus.experience=="1"){
             salary=parseInt(bonus.salary)+(parseInt(bonus.salary)*0.1)

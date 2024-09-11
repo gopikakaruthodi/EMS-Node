@@ -45,6 +45,11 @@ const app=http.createServer(async(req,res)=>{
         res.end(fs.readFileSync("../client-side/js/index.js"));
 
     }
+    else if(path.pathname=="/js/add.js"){
+        res.writeHead(200,{"Content-Type":"text/js"});
+        res.end(fs.readFileSync("../client-side/js/add.js"));
+
+    }
     console.log(req.method);
 
     // add data
@@ -77,7 +82,7 @@ const app=http.createServer(async(req,res)=>{
                     console.log(error);                
                 });
 
-                // res.end("ID Already Exist");
+                
                 
             }
            }
